@@ -7,13 +7,13 @@ import Contact from "./Contact";
 
 const Layout = () => {
   return (
-    <>
+    <div>
       <Header />
       <main>
         <section id="home">
           <Home />
         </section>
-        <section id="about">
+        <section id="about" className="flex pt-20 bg-black justify-center w-full">
           <About />
         </section>
         <section id="projects">
@@ -23,7 +23,7 @@ const Layout = () => {
           <Contact />
         </section>
       </main>
-    </>
+    </div>
   );
 };
 

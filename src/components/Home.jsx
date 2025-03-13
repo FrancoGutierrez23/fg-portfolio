@@ -34,7 +34,7 @@ export default function Home() {
               Franco Gutierrez
             </h1>
             <p className="mt-4 text-pretty text-lg font-medium text-white sm:text-xl/8">
-              Full-stack web developer
+              Full-stack web developer {'</>'}
             </p>
           </div>
         </div>
