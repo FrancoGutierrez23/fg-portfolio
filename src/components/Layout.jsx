@@ -23,7 +23,7 @@ const Layout = () => {
         <section className="flex bg-black justify-center w-full max-w-[850px] ">
           <Stack />
         </section>
-        <section id="contact">
+        <section id="contact" className="flex bg-black justify-center w-full max-w-[850px]">
           <Contact />
         </section>
       </main>
