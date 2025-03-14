@@ -40,7 +40,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact-container pt-4 w-full">
+    <div className="contact-container pt-4 w-full pb-12">
       <h2 className="text-3xl text-white mb-4">Contact Me</h2>
       <form onSubmit={sendEmail} className="flex flex-col gap-4">
         <input

@@ -5,6 +5,7 @@ import About from "./About";
 import Projects from "./Projects";
 import Contact from "./Contact";
 import Stack from './Stack';
+import Footer from './Footer';
 
 const Layout = () => {
   return (
@@ -27,6 +28,7 @@ const Layout = () => {
           <Contact />
         </section>
       </main>
+      <Footer />
     </div>
   );
 };
