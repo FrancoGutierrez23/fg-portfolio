@@ -25,14 +25,14 @@ const ProjectsData = [
 
 const Projects = () => {
   return (
-    <div className="flex bg-black items-center flex-col">
-      <h3 className="text-white absolute left-[5%] text-3xl w-full">
-        Franco/projects/
+    <div className="flex bg-black items-center flex-col w-full">
+      <h3 className="text-white text-2xl w-full">
+        Franco / Projects /
       </h3>
 
-      <div className="flex flex-wrap justify-between gap-3 flex-col xmd:flex-row bg-black pt-12">
+      <div className="flex flex-wrap w-full justify-between gap-3 flex-col xmd:flex-row bg-black pt-3">
         {ProjectsData.map((project) => (
-          <div className="xmd:max-w-sm max-w-lg mb-2 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+          <div className="xmd:max-w-sm max-w-md mb-2 w-full bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
             <a href={project.url} target="blank w-full">
               <img
                 className="rounded-t-lg w-full"
@@ -53,7 +53,7 @@ const Projects = () => {
               <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
                 Note: {project.note}
               </p>
-              <div className="flex wrap gap-3 mb-2">
+              <div className="flex flex-wrap gap-3 mb-2">
                 {project.usedStack.map((tech) => (
                   <tag className="text-white">{tech}</tag>
                 ))}
