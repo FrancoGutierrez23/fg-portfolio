@@ -47,10 +47,10 @@ const Projects = () => {
                   <tag className="inline-block rotate-180">^</tag>
                 </h5>
               </a>
-              <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              <p className="mb-3 text-gray-700 dark:text-gray-400">
                 {project.description}
               </p>
-              <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              <p className="mb-3 text-gray-700 dark:text-gray-400">
                 Note: {project.note}
               </p>
               <div className="flex flex-wrap gap-3 mb-2">

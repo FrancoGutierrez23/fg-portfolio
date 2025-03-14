@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
@@ -6,17 +6,32 @@ const navigation = [
   { name: "Home", href: "#home" },
   { name: "About me", href: "#about" },
   { name: "Projects", href: "#projects" },
+  { name: "My stack", href: '#stack' },
   { name: "Contact", href: "#contact" },
 ];
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 90);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <header className="absolute inset-x-0 top-0 z-50">
+    <header
+      className={`fixed w-full inset-x-0 top-0 z-50 transition-colors duration-500 ${
+        isScrolled ? "bg-black" : "bg-transparent"
+      }`}
+    >
       <nav
         aria-label="Global"
-        className="flex items-center justify-between p-6 lg:px-8"
+        className="flex items-center justify-between lg:px-8 flex-row-reverse"
       >
         <div className="flex lg:hidden">
           <button
@@ -25,7 +40,7 @@ const Header = () => {
             className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-200 hover:scale-110 transition-all"
           >
             <span className="sr-only">Open main menu</span>
-            <Bars3Icon aria-hidden="true" className="size-6" />
+            <Bars3Icon aria-hidden="true" className="size-6 m-3 mr-5" />
           </button>
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
@@ -33,7 +48,7 @@ const Header = () => {
             <a
               key={item.name}
               href={item.href}
-              className="text-sm/6 font-semibold text-white"
+              className="text-sm/6 font-semibold text-white p-3 hover:scale-110 transition-all"
             >
               {item.name}
             </a>
@@ -63,7 +78,7 @@ const Header = () => {
             <button
               type="button"
               onClick={() => setMobileMenuOpen(false)}
-              className="-m-2.5 rounded-md p-2.5 text-gray-200 hover:scale-110 transition-all "
+              className="-m-2.5 rounded-md p-2.5 text-gray-200 hover:scale-110 transition-all"
             >
               <span className="sr-only">Close menu</span>
               <XMarkIcon aria-hidden="true" className="size-6" />
