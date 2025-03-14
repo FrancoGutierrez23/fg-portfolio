@@ -10,3 +10,9 @@ html {
     scroll-behavior: smooth;
   }
   
+  .mask-gradient {
+    mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+    z-index: 500;
+  }
+  

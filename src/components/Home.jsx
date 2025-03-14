@@ -21,20 +21,19 @@ export default function Home() {
         </div>
         <div className="mx-auto max-w-2xl">
           <div className="text-center items-center flex justify-center flex-col">
-            <div className="h-1/2 w-1/2 max-h-80 max-w-80  relative flex justify-center">
+            <div className="h-3/4 w-3/4 max-h-80 max-w-80 relative flex justify-center">
               <img
                 src={MyAvatar}
                 alt="My Avatar"
-                className="h-full object-contain"
+                className="h-full object-contain mask-gradient"
               />
-              <div className="absolute bottom-0 left-0 w-80 h-10 bg-gradient-to-t from-black to-transparent"></div>
             </div>
 
-            <h1 className="text-balance text-5xl font-semibold tracking-tight text-white sm:text-7xl">
+            <h1 className="text-balance text-3xl font-semibold tracking-tight text-white xsm:text-5xl sm:text-7xl">
               Franco Gutierrez
             </h1>
             <p className="mt-4 text-pretty text-lg font-medium text-white sm:text-xl/8">
-              Full-stack web developer {'</>'}
+              Full-stack web developer {"</>"}
             </p>
           </div>
         </div>
