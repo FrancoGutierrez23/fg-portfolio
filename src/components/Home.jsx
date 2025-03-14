@@ -1,4 +1,3 @@
-import Header from "./Header";
 import MyAvatar from "./assets/myAvatar.svg";
 
 export default function Home() {
