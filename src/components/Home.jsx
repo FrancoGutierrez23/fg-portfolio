@@ -1,4 +1,5 @@
 import MyAvatar from "./assets/myAvatar.svg";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -29,11 +30,15 @@ export default function Home() {
             <h1 className="text-balance text-3xl font-semibold tracking-tight text-white xsm:text-5xl sm:text-7xl">
               Franco Gutierrez
             </h1>
-            <p className="mt-4 flex text-pretty text-lg font-medium text-white sm:text-xl/8">
+            <p className="mt-4 flex items-center text-pretty text-lg font-medium text-white sm:text-xl/8">
               Full-stack web developer
               <span className="animate-bounce p-2 w-fit text-indigo-300 font-semibold">
                 {" </>"}
               </span>
+              <a href="/Franco_Gutierrez_Resume_en.pdf" target="_blank" rel="noopener noreferrer" className="flex gap-2 bg-indigo-400 px-4 rounded-2xl ml-5 items-center hover:scale-105 transition-all">
+                CV 
+                <FaExternalLinkAlt />
+              </a>
             </p>
           </div>
         </div>
