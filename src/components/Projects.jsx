@@ -42,7 +42,7 @@ const Projects = () => {
               <a href={project.url} target="blank">
                 <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                   /{project.title}{" "}
-                  <tag className="inline-block rotate-180">^</tag>
+                  <span className="inline-block rotate-180">^</span>
                 </h5>
               </a>
               <p className="mb-3 text-gray-700 dark:text-gray-400">
@@ -53,13 +53,13 @@ const Projects = () => {
               </p>
               <div className="flex flex-wrap gap-3 mb-2">
                 {project.usedStack.map((tech) => (
-                  <tag className="text-white">{tech}</tag>
+                  <span className="text-white text-sm bg-black bg-opacity-40 border-2 border-indigo-500 rounded-2xl px-2 py-1">{tech}</span>
                 ))}
               </div>
               <a
                 href={project.url}
                 target="blank"
-                className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-indigo-700 rounded-lg hover:bg-indigo-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-indigo-600 dark:hover:bg-indigo-700 dark:focus:ring-indigo-800"
               >
                 Go Live
                 <svg

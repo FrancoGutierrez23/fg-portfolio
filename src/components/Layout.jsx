@@ -32,7 +32,7 @@ const Layout = () => {
         <section
           id="home"
           ref={ref1}
-          className={`transition-opacity ease-in duration-500 ${
+          className={`pb-20 transition-opacity ease-in duration-500 ${
             isVisible1 ? "opacity-100" : "opacity-0"
           }`}
         >
@@ -41,7 +41,7 @@ const Layout = () => {
         <section
           id="about"
           ref={ref2}
-          className={`flex pt-20 bg-black justify-center w-full max-w-[850px] transition-opacity ease-in duration-500 ${
+          className={`flex bg-black justify-center w-full max-w-[850px] transition-opacity ease-in duration-500 ${
             isVisible2 ? "opacity-100" : "opacity-0"
           }`}
         >

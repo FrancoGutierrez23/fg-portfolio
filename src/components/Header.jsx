@@ -31,9 +31,9 @@ const Header = () => {
     >
       <nav
         aria-label="Global"
-        className="flex items-center justify-between lg:px-8 flex-row-reverse"
+        className="flex items-center justify-between lg:px-8 flex-col"
       >
-        <div className="flex lg:hidden">
+        <div className="flex lg:hidden ml-[90%]">
           <button
             type="button"
             onClick={() => setMobileMenuOpen(true)}
@@ -43,14 +43,14 @@ const Header = () => {
             <Bars3Icon aria-hidden="true" className="size-6 m-3 mr-5" />
           </button>
         </div>
-        <div className="hidden lg:flex lg:gap-x-12">
+        <div className="hidden lg:flex lg:gap-x-12 w-full justify-between max-w-[874px]">
           {navigation.map((item) => (
             <a
               key={item.name}
               href={item.href}
-              className="text-sm/6 font-semibold text-white p-3 hover:scale-110 transition-all"
+              className="outer-nav-a text-sm/6 font-semibold text-white p-3 hover:scale-110 transition-all"
             >
-              {item.name}
+              <span className='inner-nav-span'>{item.name}</span>
             </a>
           ))}
         </div>
@@ -92,9 +92,9 @@ const Header = () => {
                     key={item.name}
                     href={item.href}
                     onClick={() => setMobileMenuOpen(false)} // close menu after click
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:text-gray-300 hover:scale-110 transition-all"
+                    className="outer-nav-a -mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:text-gray-300 transition-all"
                   >
-                    {item.name}
+                    <span>{item.name}</span>
                   </a>
                 ))}
               </div>

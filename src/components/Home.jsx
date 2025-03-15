@@ -29,8 +29,11 @@ export default function Home() {
             <h1 className="text-balance text-3xl font-semibold tracking-tight text-white xsm:text-5xl sm:text-7xl">
               Franco Gutierrez
             </h1>
-            <p className="mt-4 text-pretty text-lg font-medium text-white sm:text-xl/8">
-              Full-stack web developer {"</>"}
+            <p className="mt-4 flex text-pretty text-lg font-medium text-white sm:text-xl/8">
+              Full-stack web developer
+              <span className="animate-bounce p-2 w-fit text-indigo-300 font-semibold">
+                {" </>"}
+              </span>
             </p>
           </div>
         </div>

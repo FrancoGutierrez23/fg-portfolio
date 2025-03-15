@@ -3,17 +3,44 @@
 @tailwind utilities;
 
 * {
-    box-sizing: border-box;
-    font-family: "League Spartan", sans-serif;
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
 }
 
 html {
-    scroll-behavior: smooth;
-  }
-  
-  .mask-gradient {
-    mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
-    -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
-    z-index: 500;
-  }
-  
+  scroll-behavior: smooth;
+}
+
+.mask-gradient {
+  mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+  z-index: 500;
+}
+
+.outer-nav-a {
+  --a: -45deg; /* control the angle */
+  --t: 0.1rem; /* thickness of the underline */
+}
+
+.outer-nav-a:hover {
+  scale: 1.03;
+}
+
+.outer-nav-a span {
+  --_s: calc(var(--t) * cos(var(--a)));
+  background: linear-gradient(
+      var(--a),
+      #00000000 var(--_s),
+      currentColor 0 calc(100% - var(--_s)),
+      #0000 0
+    )
+    bottom/var(--i, 90%) var(--t) no-repeat;
+  padding: 0 0.25em calc(var(--t) + 0.1em);
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.outer-nav-a:hover span {
+  --i: 100%;
+}
