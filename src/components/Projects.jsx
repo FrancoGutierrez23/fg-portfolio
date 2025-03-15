@@ -26,9 +26,7 @@ const ProjectsData = [
 const Projects = () => {
   return (
     <div className="flex bg-black items-center flex-col w-full">
-      <h3 className="text-white text-2xl w-full">
-        Franco / Projects /
-      </h3>
+      <h3 className="text-white text-2xl w-full">Franco / Projects /</h3>
 
       <div className="flex flex-wrap w-full justify-between gap-3 flex-col xmd:flex-row bg-black pt-3">
         {ProjectsData.map((project) => (
