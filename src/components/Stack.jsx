@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { 
   DiJavascript1, DiReact, DiNodejsSmall 
 } from 'react-icons/di';
@@ -31,12 +32,13 @@ const techIcons = {
 };
 
 const Stack = () => {
+  const { t } = useTranslation();
   return (
-    <div className="pt-10">
-      <h3 className="text-white text-2xl mb-4">Franco / MyStack /</h3>
+    <div className="py-10">
+      <h3 className="text-white text-2xl mb-4">Franco / {t("MyStack")} /</h3>
       <div className="flex flex-wrap gap-3 w-full">
         {stack.map((tech) => (
-          <div key={tech} className="flex flex-col items-center bg-gray-800 p-3 w-28 rounded">
+          <div key={tech} className="hover:scale-105 transition-all flex flex-col items-center bg-gray-800 p-3 w-28 rounded">
             {techIcons[tech]}
             <span className="text-white mt-2">{tech}</span>
           </div>

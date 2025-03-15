@@ -1,18 +1,21 @@
 import React, { useState, useEffect } from "react";
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-
-const navigation = [
-  { name: "Home", href: "#home" },
-  { name: "About me", href: "#about" },
-  { name: "Projects", href: "#projects" },
-  { name: "My stack", href: '#stack' },
-  { name: "Contact", href: "#contact" },
-];
+import { useTranslation } from "react-i18next";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const { t } = useTranslation();
+
+  const navigation = [
+    { name: t("Home"), href: "#home" },
+    { name: t("About me"), href: "#about" },
+    { name: t("Projects"), href: "#projects" },
+    { name: t("My stack"), href: "#stack" },
+    { name: t("Contact"), href: "#contact" },
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -43,6 +46,8 @@ const Header = () => {
             <Bars3Icon aria-hidden="true" className="size-6 m-3 mr-5" />
           </button>
         </div>
+
+        {/* Desktop Navigation */}
         <div className="hidden lg:flex lg:gap-x-12 w-full justify-between max-w-[874px]">
           {navigation.map((item) => (
             <a
@@ -53,15 +58,18 @@ const Header = () => {
               <span className='inner-nav-span'>{item.name}</span>
             </a>
           ))}
+          <LanguageSwitcher />
         </div>
       </nav>
+
+      {/* Mobile Menu */}
       <Dialog
         open={mobileMenuOpen}
         onClose={setMobileMenuOpen}
         className="lg:hidden"
       >
         <div className="fixed inset-0 z-50" />
-        <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-black px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <DialogPanel className="fixed inset-y-0 right-0 z-50 overflow-y-auto bg-black px-6 py-6 w-full xsm:max-w-sm xsm:ring-1 xsm:ring-gray-900/10 sm:w-1/2 ">
           <div
             aria-hidden="true"
             className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
@@ -92,11 +100,14 @@ const Header = () => {
                     key={item.name}
                     href={item.href}
                     onClick={() => setMobileMenuOpen(false)} // close menu after click
-                    className="outer-nav-a -mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:text-gray-300 transition-all"
+                    className="outer-nav-a -mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:text-gray-300 transition-all text-center"
                   >
                     <span>{item.name}</span>
                   </a>
                 ))}
+                <div className="mt-4 text-center">
+                  <LanguageSwitcher />
+                </div>
               </div>
             </div>
           </div>

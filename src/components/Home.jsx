@@ -1,7 +1,9 @@
 import MyAvatar from "./assets/myAvatar.svg";
 import { FaExternalLinkAlt } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 export default function Home() {
+  const { t } = useTranslation();
   return (
     <div className="bg-black">
       <div className="relative isolate px-6 pt-14 lg:px-8">
@@ -31,7 +33,7 @@ export default function Home() {
               Franco Gutierrez
             </h1>
             <p className="mt-4 flex items-center text-pretty text-lg font-medium text-white sm:text-xl/8">
-              Full-stack web developer
+              {t("Full-stack web developer")}
               <span className="animate-bounce p-2 w-fit text-indigo-300 font-semibold">
                 {" </>"}
               </span>
