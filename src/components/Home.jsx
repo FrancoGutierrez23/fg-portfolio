@@ -1,9 +1,14 @@
 import MyAvatar from "./assets/myAvatar.svg";
 import { FaExternalLinkAlt } from "react-icons/fa";
-import { useTranslation } from "react-i18next";
+import { useTranslation,  } from "react-i18next";
 
 export default function Home() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const cvFile =
+    i18n.language === "es"
+      ? "/Franco_Gutierrez_Resume_es.pdf"
+      : "/Franco_Gutierrez_Resume_en.pdf";
+
   return (
     <div className="bg-black">
       <div className="relative isolate px-6 pt-14 lg:px-8">
@@ -37,7 +42,7 @@ export default function Home() {
               <span className="animate-bounce p-2 w-fit text-indigo-300 font-semibold">
                 {" </>"}
               </span>
-              <a href="/Franco_Gutierrez_Resume_en.pdf" target="_blank" rel="noopener noreferrer" className="flex gap-2 bg-indigo-400 px-4 rounded-2xl ml-5 items-center hover:scale-105 transition-all">
+              <a href={cvFile} target="_blank" rel="noopener noreferrer" className="flex gap-2 bg-indigo-400 px-4 rounded-2xl ml-5 items-center hover:scale-105 transition-all">
                 CV 
                 <FaExternalLinkAlt />
               </a>

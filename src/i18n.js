@@ -47,7 +47,7 @@ const resources = {
       "description": "descripción",
       "years_old": "edad",
       "location": "ubicación",
-      "After spending a few years programming small projects as a hobby, I decided to formalize my knowledge by taking courses that taught a full set of cohesive skills. I'm excited to demonstrate my abilities and collaborate on innovative projects.": "Tras pasar unos años programando pequeños proyectos como hobby, decidí consolidar mis conocimientos con cursos que me enseñaron un conjunto completo de habilidades cohesivas. Me entusiasma demostrar mis habilidades y colaborar en proyectos innovadores.",
+      "After spending a few years programming small projects as a hobby, I decided to formalize my knowledge by taking courses that taught a full set of cohesive skills. I'm excited to demonstrate my abilities and collaborate on innovative projects.": "Tras pasar unos años programando pequeños proyectos como hobby, decidí consolidar formalmente mis conocimientos con cursos que me enseñaron un conjunto completo de habilidades cohesivas. Estoy preparado y ansioso de poder demostrar mis habilidades y colaborar en proyectos innovadores.",
       
       "E-commerce with basic features like login/register (including Google auth), add to cart, buy with Stripe, orders, and more!": "E-commerce  con funciones básicas como iniciar sesión/registro (incluida la autenticación de Google), agregar al carrito, comprar con Stripe, pedidos y más!",
       "Note": "Nota",
