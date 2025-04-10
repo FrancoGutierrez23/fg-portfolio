@@ -1,4 +1,4 @@
-import MyAvatar from "./assets/myAvatar.svg";
+import MyAvatar from "./assets/avatar.png";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { useTranslation,  } from "react-i18next";
 
