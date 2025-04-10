@@ -21,6 +21,7 @@ const resources = {
       "Render servers may take some time to load at first.": "Render servers may take some time to load at first.",
       "A reddit clone with a neon twist! You can retrieve post from differents subreddits including comments, videos, galleries and more!": "A reddit clone with a neon twist! You can retrieve post from differents subreddits including comments, videos, galleries and more!",
       "This is one of my first projects.": "This is one of my first projects.",
+      "Movie recommendation app using the TMDB API. You can search movies, get details and related movies.": "Movie recommendation app using the TMDB API. You can search movies, get details and related movies.",
       "Go Live": "Go Live",
       "MyStack": "MyStack",
 
@@ -54,6 +55,7 @@ const resources = {
       "Render servers may take some time to load at first.": "Es posible que los servidores de Render tarden un tiempo en cargarse al principio.",
       "A reddit clone with a neon twist! You can retrieve post from differents subreddits including comments, videos, galleries and more!": "¡Un clon de Reddit con un toque de neón! Puedes recuperar publicaciones de diferentes subreddits, incluyendo comentarios, videos, galerías y más!",
       "This is one of my first projects.": "Este es uno de mis primeros proyectos.",
+      "Movie recommendation app using the TMDB API. You can search movies, get details and related movies.": "App para recomendaciones de películas. Puedes buscar películas, sus detalles y películas relacionadas.",
       "Go Live": "Sitio en vivo",
       "MyStack": "MiStack",
 

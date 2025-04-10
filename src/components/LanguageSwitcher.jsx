@@ -15,13 +15,11 @@ const LanguageSwitcher = () => {
 
   return (
     <div className="flex items-center justify-center mt-4 lg:mt-0">
-        <img
-          src={englishFlag}
-          alt="English"
-          className={` ${
-            i18n.language === "en" ? "" : "opacity-60"
-          }`}
-        />
+      <img
+        src={englishFlag}
+        alt="English"
+        className={` ${i18n.language === "en" ? "" : "opacity-60"}`}
+      />
       <label className="inline-flex items-center cursor-pointer mx-4">
         <input
           type="checkbox"
@@ -38,13 +36,11 @@ const LanguageSwitcher = () => {
                      after:h-5 after:w-5 after:transition-all dark:border-gray-600"
         ></div>
       </label>
-        <img
-          src={spanishFlag}
-          alt="Español"
-          className={` ${
-            i18n.language === "es" ? "" : "opacity-60"
-          }`}
-        />
+      <img
+        src={spanishFlag}
+        alt="Español"
+        className={` ${i18n.language === "es" ? "" : "opacity-60"}`}
+      />
     </div>
   );
 };

@@ -1,6 +1,7 @@
 import React from "react";
 import EcommerceImg from "./assets/E-commerce_img.png";
 import RedditsignImg from "./assets/Redditsign_img.png";
+import MovieRecommendationImg from './assets/MovieRecommendation_img.png';
 import { useTranslation } from "react-i18next";
 
 
@@ -26,6 +27,15 @@ const Projects = () => {
       note: t("This is one of my first projects."),
       usedStack: ["JavaScript", "React", "Redux", "Node.js"],
     },
+    {
+      img: MovieRecommendationImg,
+      title: "Movie Recommendation",
+      description:
+        t("Movie recommendation app using the TMDB API. You can search movies, get details and related movies."),
+        url: "https://movie-recommendation-fg.netlify.app",
+        note: t("Render servers may take some time to load at first."),
+        usedStack: ["TypeScript", "Vite", "Tailwind", "Redux", "Node", "React"]
+    }
   ];
   
   return (
