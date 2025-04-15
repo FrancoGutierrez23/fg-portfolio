@@ -13,7 +13,7 @@ const About = () => {
       <p className="pl-4 mt-4">
         <span className="text-indigo-500">{t("description")}</span>:{" "}
         <span className="text-white pl-1">
-          "{t("After spending a few years programming small projects as a hobby, I decided to formalize my knowledge by taking courses that taught a full set of cohesive skills. I'm excited to demonstrate my abilities and collaborate on innovative projects.")}"
+          "{t("aboutDescription")}"
         </span>
         ,
       </p>
