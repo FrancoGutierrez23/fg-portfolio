@@ -10,13 +10,12 @@ const About = () => {
         <span className="text-blue-400">const</span>{" "}
         <span className="text-green-400 text-xl">{t("AboutMe")}</span> ={" {"}
       </h3>
-      <p className="pl-4 mt-4">
+      <div className="pl-4 mt-4">
         <span className="text-indigo-500">{t("description")}</span>:{" "}
-        <span className="text-white pl-1">
-          "{t("aboutDescription")}"
-        </span>
-        ,
-      </p>
+        <div className="text-white ml-4" style={{ whiteSpace: "pre-line" }}>
+          "{t("aboutDescription")}",
+        </div>
+      </div>
       <p className="pl-4 mt-4">
         <span className="text-indigo-500">{t("years_old")}</span>:{" "}
         <span className="text-white pl-1">22</span>,

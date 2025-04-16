@@ -18,7 +18,7 @@ const resources = {
       "Show more": "Show more",
       "Show less": "Show less",
 
-      "aboutDescription": "After spending a few years programming small projects as a hobby, I decided to formalize my knowledge by taking courses that taught a full set of cohesive skills. I'm excited to demonstrate my abilities and collaborate on innovative projects.",
+      "aboutDescription": "After spending a few years programming small projects as a hobby, I decided to formally consolidate my knowledge through courses, thus learning a set of concepts, technologies, and tools for web development. I am ready and eager to demonstrate my skills and collaborate on innovative projects.",
       
       "eCommerceDescription": "E-commerce with basic features like login/register (incluiding Google auth), adding products to cart, Stripe's checkout, check orders, and more.\n\nThis was my first full-stack project, which used different deployments for the frontend and server, as well as a SQL database in the cloud, all powered by Render.\n\nThis project helped me better understand concepts like integrating different parts of the application, handling error and loading states, authentication, input security, and much more.",
       "Note": "Note",
@@ -57,7 +57,7 @@ const resources = {
       "Show more": "Mostrar más",
       "Show less": "Mostrar menos",
 
-      "aboutDescription": "Tras pasar unos años programando pequeños proyectos como hobby, decidí consolidar formalmente mis conocimientos con cursos que me enseñaron un conjunto completo de habilidades cohesivas. Estoy preparado y ansioso de poder demostrar mis habilidades y colaborar en proyectos innovadores.",
+      "aboutDescription": "Tras pasar unos años programando pequeños proyectos como hobby, decidí consolidar formalmente mis conocimientos a través de cursos, aprendiendo así un conjunto de conceptos, tecnologías y herramientas para el desarrollo web.\nEstoy preparado y ansioso de poder demostrar mis habilidades y colaborar en proyectos innovadores.",
       
       "eCommerceDescription": "E-commerce  con funciones básicas como iniciar sesión/registrarse (incluido Google auth), agregar productos al carrito, comprar con Stripe, ver pedidos y más.\n\nEste fue mi primer projecto full-stack, en el cual usé distintos deploys para el frontend y el server, además de una base de datos SQL en la nube, todo con Render.\n\nEste projecto me ayudó  a entender mejor conceptos como la integración de distintas partes de la aplicación, manejo de estados de error y carga, autentificación, seguridad de los inputs, y mucho más.",
       "Note": "Nota",
