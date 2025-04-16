@@ -1,5 +1,5 @@
 import { FaExternalLinkAlt } from "react-icons/fa";
-import { useTranslation,  } from "react-i18next";
+import { useTranslation, } from "react-i18next";
 import GlitchEffect from "./GlitchEffect";
 
 export default function Home() {
@@ -27,28 +27,31 @@ export default function Home() {
         <div className="mx-auto max-w-2xl">
           <div className="text-center items-center flex justify-center flex-col">
             <div className="h-full w-full mask-gradient max-h-80 max-w-80 relative flex justify-center">
-            <div className="xsm:w-full xsm:h-80 w-[80%] h-64">
-              <GlitchEffect className="h-[100ch]" />
-            </div>
+              <div className="xsm:w-full xsm:h-80 w-[80%] h-64">
+                <GlitchEffect className="h-[100ch]" />
+              </div>
 
 
             </div>
             <div className="relative w-[100vw] mb-8">
               <h1 className="text-balance w-[100vw] -top-5 absolute  text-4xl font-semibold tracking-tight text-white xsm:text-5xl sm:text-7xl">
-              Franco Gutierrez
-            </h1>
+                Franco Gutierrez
+              </h1>
             </div>
-            
-            <p className="mt-4 flex items-center text-pretty text-lg font-medium text-white sm:text-xl/8">
+
+            <div className="mt-4 relative px-4 flex items-center text-pretty text-lg font-medium text-white sm:text-xl/8">
               {t("Full-stack web developer")}
-              <span className="animate-bounce p-2 w-fit text-indigo-300 font-semibold">
-                {" </>"}
-              </span>
-              <a href={cvFile} target="_blank" rel="noopener noreferrer" className="flex gap-2 bg-indigo-400 px-4 rounded-2xl ml-5 items-center hover:scale-105 transition-all">
-                CV 
+              <p className="relative ">
+                <span className="animate-bounce absolute -bottom-7  p-2 w-fit text-indigo-300 font-semibold">
+                  {" </>"}
+                </span>
+              </p>
+
+              <a href={cvFile} target="_blank" rel="noopener noreferrer" className="flex gap-2 bg-indigo-400 px-4 rounded-2xl ml-12 items-center hover:scale-105 transition-all">
+                CV
                 <FaExternalLinkAlt />
               </a>
-            </p>
+            </div>
           </div>
         </div>
         <div
