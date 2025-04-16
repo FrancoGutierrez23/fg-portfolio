@@ -14,7 +14,7 @@ const LanguageSwitcher = () => {
   const isSpanish = i18n.language === "es";
 
   return (
-    <div className="flex items-center justify-center mt-4 lg:mt-0">
+    <div className="flex items-center justify-center mt-4 sm:mt-0">
       <img
         src={englishFlag}
         alt="English"

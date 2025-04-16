@@ -36,7 +36,7 @@ const Header = () => {
         aria-label="Global"
         className="flex items-center justify-between lg:px-8 flex-col"
       >
-        <div className="flex lg:hidden ml-[90%]">
+        <div className="flex sm:hidden ml-[90%]">
           <button
             type="button"
             onClick={() => setMobileMenuOpen(true)}
@@ -48,7 +48,7 @@ const Header = () => {
         </div>
 
         {/* Desktop Navigation */}
-        <div className="hidden lg:flex lg:gap-x-12 w-full justify-between max-w-[874px]">
+        <div className="hidden sm:flex sm:gap-x-0 w-full justify-evenly max-w-[874px]">
           {navigation.map((item) => (
             <a
               key={item.name}
@@ -66,7 +66,7 @@ const Header = () => {
       <Dialog
         open={mobileMenuOpen}
         onClose={setMobileMenuOpen}
-        className="lg:hidden"
+        className="sm:hidden"
       >
         <div className="fixed inset-0 z-50" />
         <DialogPanel className="fixed inset-y-0 right-0 z-50 overflow-y-auto bg-black px-6 py-6 w-full xsm:max-w-sm xsm:ring-1 xsm:ring-gray-900/10 sm:w-1/2 ">
