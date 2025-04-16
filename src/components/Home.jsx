@@ -1,6 +1,6 @@
-import MyAvatar from "./assets/avatar.png";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { useTranslation,  } from "react-i18next";
+import GlitchEffect from "./GlitchEffect";
 
 export default function Home() {
   const { t, i18n } = useTranslation();
@@ -26,17 +26,19 @@ export default function Home() {
         </div>
         <div className="mx-auto max-w-2xl">
           <div className="text-center items-center flex justify-center flex-col">
-            <div className="h-3/4 w-3/4 max-h-80 max-w-80 relative flex justify-center">
-              <img
-                src={MyAvatar}
-                alt="My Avatar"
-                className="h-full object-contain mask-gradient"
-              />
+            <div className="h-full w-full mask-gradient max-h-80 max-w-80 relative flex justify-center">
+            <div className="xsm:w-full xsm:h-80 w-[80%] h-64">
+              <GlitchEffect className="h-[100ch]" />
             </div>
 
-            <h1 className="text-balance text-3xl font-semibold tracking-tight text-white xsm:text-5xl sm:text-7xl">
+
+            </div>
+            <div className="relative w-[100vw] mb-8">
+              <h1 className="text-balance w-[100vw] -top-5 absolute  text-4xl font-semibold tracking-tight text-white xsm:text-5xl sm:text-7xl">
               Franco Gutierrez
             </h1>
+            </div>
+            
             <p className="mt-4 flex items-center text-pretty text-lg font-medium text-white sm:text-xl/8">
               {t("Full-stack web developer")}
               <span className="animate-bounce p-2 w-fit text-indigo-300 font-semibold">

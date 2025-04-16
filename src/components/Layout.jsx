@@ -26,7 +26,7 @@ const Layout = () => {
   const isVisible5 = useIsVisible(ref5);
 
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <Header />
       <main className="px-[5%] xl:px-[15%] bg-black flex flex-col items-center">
         <section
