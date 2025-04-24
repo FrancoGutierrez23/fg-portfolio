@@ -44,3 +44,11 @@ html {
 .outer-nav-a:hover span {
   --i: 100%;
 }
+
+.vite {
+  padding: 2px;
+  border-radius: 5px;
+  color: rgb(240, 240, 13);
+  background: #41D1FF;
+  background: linear-gradient(140deg, rgba(65, 209, 255, 1) 20%, rgba(189, 52, 254, 1) 66%);
+}

@@ -26,8 +26,7 @@ const resources = {
 
       "MovieRecoDescription": "Movie recommendation app.\nIt has features like movie sections (top rated, upcoming, popular, etc.), search bar, modal with details about selected movies, and of course, recommendations based on your choices.\n\nThis project particularly helped me sharpen my knowledge of TypeScript, Tailwind, and Redux.",
 
-      "RedditsignDescription": "A reddit clone with a neon twist! You can retrieve post from differents subreddits including comments, videos, galleries and more!",
-      "This is one of my first projects.": "This is one of my first projects.",
+      "RedditsignDescription": "A Reddit clone with a neon twist.\nYou can view posts from different subreddits, including comments, videos, and galleries, and you can also search for posts.\n\nThis is one of my first projects using an external API and the first one where I implemented Redux, so it was helpful in gaining a better understanding of how state, API requests, server-side logic, and more.",
 
       "Go Live": "Go Live",
       "MyStack": "MyStack",

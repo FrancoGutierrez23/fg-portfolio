@@ -5,7 +5,7 @@ import { MdEmail } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <footer className="bg-black border-t justify-evenly pb-6 border-indigo-200 flex-wrap w-full flex gap-5 text-white h-24 pt-6 px-[5%] xl:px-[15%] items-center">
+    <footer className="bg-black border-t justify-evenly pb-32 border-indigo-200 flex-wrap w-full flex gap-5 text-white h-24 pt-24 px-[5%] xl:px-[15%] items-center">
       <a href='https://github.com/FrancoGutierrez23' target="blank" className="flex gap-1 items-center">
         <FaGithub /> <span>GitHub</span>
       </a>

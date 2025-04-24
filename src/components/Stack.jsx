@@ -6,12 +6,14 @@ import {
 import { 
   SiTypescript, SiExpress, SiJest, SiMocha, 
   SiPostgresql, SiHtml5, SiCss3, SiTailwindcss, 
-  SiRedux, SiGit, SiGithub 
+  SiRedux, SiGit, SiGithub
 } from 'react-icons/si';
+import { TbBrandVite } from "react-icons/tb";
 
 const stack = [
   'TypeScript', 'JavaScript', 'React', 'Express.js', 'Node.js', 
-  'Jest', 'Mocha', 'PSQL', 'HTML', 'CSS', 'Tailwind CSS', 'Redux', 'Git', 'GitHub'
+  'Jest', 'Mocha', 'PSQL', 'HTML', 'CSS', 'Tailwind CSS', 'Redux', 'Git', 
+  'GitHub', 'Vite'
 ];
 
 const techIcons = {
@@ -28,7 +30,8 @@ const techIcons = {
   'Tailwind CSS': <SiTailwindcss size={40} color="#38B2AC" />,
   'Redux': <SiRedux size={40} color="#764ABC" />,
   'Git': <SiGit size={40} color="#F05032" />,
-  'GitHub': <SiGithub size={40} color="#171515" />
+  'GitHub': <SiGithub size={40} color="#171515" />,
+  'Vite': <TbBrandVite className="vite" size={40} />
 };
 
 const Stack = () => {
