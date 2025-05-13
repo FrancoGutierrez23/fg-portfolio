@@ -6,8 +6,8 @@ export default function Home() {
   const { t, i18n } = useTranslation();
   const cvFile =
     i18n.language === "es"
-      ? "/Franco_Gutierrez_Resume_es.pdf"
-      : "/Franco_Gutierrez_Resume_en.pdf";
+      ? "/Franco Gutierrez CV.pdf"
+      : "/Franco Gutierrez Resume.pdf";
 
   return (
     <div className="bg-black">
